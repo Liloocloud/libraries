@@ -1,0 +1,24 @@
+{
+    "name": "liloo/fwp-lib-markdown",
+    "description": "Markdown para Liloo Framework PHP",
+    "keywords": [
+        "liloo",
+        "markdown",
+        "framework-php",
+        "frame-php"
+    ],
+    "homepage": "https://github.com/Liloocloud/fwp-markdown",
+    "authors": [
+        {
+            "name": "Felipe Oliveira Lourenço",
+            "email": "felipe.game.studio@gmail.com",
+            "homepage": "https://liloo.com.br",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0",
+        "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+    }
+}
