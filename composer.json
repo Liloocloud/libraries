@@ -17,6 +17,11 @@
         }
     ],
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
     "require": {
         "php": ">=7.0",
         "psr/log": "^1.0.1 || ^2.0 || ^3.0"
