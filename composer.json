@@ -1,13 +1,13 @@
 {
     "name": "liloo/helpers",
-    "description": "Markdown para Liloo Framework PHP",
+    "description": "Classes auxiliares da Liloo Framework PHP",
     "keywords": [
         "liloo",
         "helpers",
         "framework-php",
         "frame-php"
     ],
-    "homepage": "https://github.com/Liloocloud/fwp-markdown",
+    "homepage": "https://github.com/Liloocloud/helpers",
     "authors": [
         {
             "name": "Felipe Oliveira Lourenço",
