@@ -4,7 +4,7 @@
  * @copyright Emanuil Rusev | Felipe Oliveira - 12.04.2021
  */
 
-namespace Src;
+namespace Liloo;
 
 class Markdown
 {
