@@ -1,5 +1,0 @@
-<?php
-/**
- * Exemplo de uso
- */
-
