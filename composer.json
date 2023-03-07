@@ -1,0 +1,36 @@
+{
+    "name": "liloo/libraries",
+    "description": "Classes auxiliares da Liloo Framework PHP",
+    "keywords": [
+        "liloo", 
+        "helpers",
+        "libraries",
+        "framework",
+        "frame",
+        "request",
+        "database",
+        "generic",
+        "email",
+        "api"
+    ],
+    "homepage": "https://github.com/Liloocloud/libraries",
+    "authors": [
+        {
+            "name": "Felipe Oliveira Lourenço",
+            "email": "felipe.game.studio@gmail.com",
+            "homepage": "https://liloo.com.br",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Liloo\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "psr/log": "^1.0.1 || ^2.0 || ^3.0",
+        "phpmailer/phpmailer": "^6"
+    }
+}
