@@ -6,11 +6,10 @@
  * @version 2.0.1
  */
 
-namespace Database;
+namespace Liloo\Database;
 
-use Database\Conn;
+use Liloo\Database\Conn;
 use PDOException;
-use \PDO;
 
 class Update
 {
@@ -61,11 +60,6 @@ class Update
         return $this->Update->rowCount();
     }
 
-    /**
-     * ****************************************
-     * *********** PRIVATE METHODS ************
-     * ****************************************
-     */
     //Obtém o PDO e Prepara a query
     private function Connect()
     {

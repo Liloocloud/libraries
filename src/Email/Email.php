@@ -10,7 +10,7 @@
  * @copyright Felipe Oliveira Lourenço - 24.04.2020
  */
 
-namespace Email;
+namespace Liloo\Email;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;

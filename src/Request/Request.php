@@ -8,7 +8,7 @@
  * LINK, UNLINK, PURGE, LOCK, UNLOCK, PROPFIND, VIEW
  */
 
-namespace Request;
+namespace Liloo\Request;
 
 class Request
 {
@@ -50,8 +50,7 @@ class Request
      */
     public function getHeader()
     {
-        
-    }
 
+    }
 
 }

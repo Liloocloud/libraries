@@ -5,7 +5,7 @@
  * @version 1.0.0
  */
 
-namespace Request;
+namespace Liloo\Request;
 
 class cURL
 {

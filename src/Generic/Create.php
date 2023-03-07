@@ -4,7 +4,7 @@
  * @copyright Felipe Oliveira Lourenço - 23.01.2023
  * @version 1.0.0
  */
-namespace Generic;
+namespace Liloo\Generic;
 
 class Create
 {
@@ -27,22 +27,22 @@ class Create
      * @param Array Campos com os valores key=values
      */
     public function insertItem()
-    {  
-        if($this->where){
-            $Chk = $this->check($this->where);            
-            if(!$Chk['bool']){
+    {
+        if ($this->where) {
+            $Chk = $this->check($this->where);
+            if (!$Chk['bool']) {
                 $Set = _set_data_table($this->table, $this->where);
                 return [
-                    'bool' => (!empty($Set))? true : false,
+                    'bool' => (!empty($Set)) ? true : false,
                     'message' => $Chk['message'],
-                    'output' => (!empty($Set))? ['id' => $Set] : null,
+                    'output' => (!empty($Set)) ? ['id' => $Set] : null,
                 ];
-            }   
+            }
             return [
                 'bool' => false,
                 'message' => 'Já existe um regitro com esse dados',
                 'output' => null,
-            ];             
+            ];
         }
         return [
             'bool' => false,
@@ -85,7 +85,7 @@ class Create
         return $diff->format("%a");
     }
 
-  /**
+    /**
      * Verifica se o linha para atualizar existe. ideal para casos onde os dados são mais sensíveis
      * @param Array Sintaxe where para verificação
      */

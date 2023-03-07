@@ -4,9 +4,9 @@
  * @copyright Felipe Oliveira Lourenço - 23.01.2023
  * @version 1.0.0
  */
-namespace Generic;
+namespace Liloo\Generic;
 
-use Helpers\Pagination;
+use Liloo\Helpers\Pagination;
 
 class Read
 {
@@ -33,7 +33,7 @@ class Read
      * @return Array
      */
     public function join(string $inner_join, int $limit = null, string $statement = '')
-    {        
+    {
         $limit = ($limit == null) ? $this->limit : $limit;
         $Stx = new Pagination(
             $this->table, '*', $inner_join, $this->limit, null, $statement

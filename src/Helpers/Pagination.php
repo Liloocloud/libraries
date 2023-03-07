@@ -5,7 +5,7 @@
  * @version 2.0.0
  */
 
-namespace Helpers;
+namespace Liloo\Helpers;
 
 class Pagination
 {
@@ -30,10 +30,10 @@ class Pagination
         $this->where = ($where != null) ? $where : '';
         $total = _get_data_full("SELECT Count(*) AS total FROM `" . $table . "` {$this->where}", $statement);
         $this->total = (isset($total[0]['total'])) ? (int) $total[0]['total'] : 0;
-        $this->select = $select;      
-        
+        $this->select = $select;
+
         $this->results = _get_data_full("SELECT {$this->select} FROM `" . $table . "` {$this->where} LIMIT {$this->limit} OFFSET " . ($this->limit * $this->offset), $statement);
-        
+
         $this->totalPages = (int) ceil($this->total / $this->limit);
         $this->totalPages = (!is_float($this->totalPages)) ? $this->totalPages : 0;
         $url = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -56,7 +56,7 @@ class Pagination
      */
     public function Nav()
     {
-        if($this->totalPages <= 1){
+        if ($this->totalPages <= 1) {
             return '';
         }
         if ($this->results()['bool']) {

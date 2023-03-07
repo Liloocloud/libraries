@@ -1,17 +1,18 @@
 <?php
 /**
  * Classe responsável por deletar genéricamente no banco de dados!
- * 
  * @copyright Felipe Oliveira - 11.01.2017
  * @version 2.0.1
  */
 
-namespace Database;
-use Database\Conn;
-use \PDO;
-use PDOException;
+namespace Liloo\Database;
 
-class Delete {
+use Liloo\Database\Conn;
+use PDOException;
+use \PDO;
+
+class Delete
+{
 
     private $Tabela;
     private $Termos;
@@ -24,7 +25,8 @@ class Delete {
     /** @var PDO */
     private $Conn;
 
-    public function ExeDelete($Tabela, $Termos, $ParseString) {
+    public function ExeDelete($Tabela, $Termos, $ParseString)
+    {
         $this->Tabela = (string) $Tabela;
         $this->Termos = (string) $Termos;
 
@@ -33,38 +35,39 @@ class Delete {
         $this->Execute();
     }
 
-    public function getResult() {
+    public function getResult()
+    {
         return $this->Result;
     }
 
-    public function getRowCount() {
+    public function getRowCount()
+    {
         return $this->Delete->rowCount();
     }
 
-    public function setPlaces($ParseString) {
+    public function setPlaces($ParseString)
+    {
         parse_str($ParseString, $this->Places);
         $this->getSyntax();
         $this->Execute();
     }
 
-    /**
-     * ****************************************
-     * *********** PRIVATE METHODS ************
-     * ****************************************
-     */
+    //Cria a sintaxe da query para Prepared Statements
+    private function getSyntax()
+    {
+        $this->Delete = "DELETE FROM {$this->Tabela} {$this->Termos}";
+    }
+
     //Obtém o PDO e Prepara a query
-    private function Connect() {
+    private function Connect()
+    {
         $this->Conn = Conn::getConn();
         $this->Delete = $this->Conn->prepare($this->Delete);
     }
 
-    //Cria a sintaxe da query para Prepared Statements
-    private function getSyntax() {
-        $this->Delete = "DELETE FROM {$this->Tabela} {$this->Termos}";
-    }
-
     //Obtém a Conexão e a Syntax, executa a query!
-    private function Execute() {
+    private function Execute()
+    {
         $this->Connect();
         try {
             $this->Delete->execute($this->Places);
