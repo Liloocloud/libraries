@@ -1,5 +1,5 @@
 <?php
-namespace Qrcode;
+namespace Liloo\Qrcode;
 
 class RsItem
 {

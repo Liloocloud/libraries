@@ -27,7 +27,10 @@
     "autoload": {
         "psr-4": {
             "Liloo\\": "src/"
-        }
+        },
+        "files": [
+            "src/Qrcode/Config/defines.php"
+        ]
     },
     "require": {
         "php": ">=7.0",

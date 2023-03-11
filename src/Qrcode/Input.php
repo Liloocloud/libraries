@@ -1,5 +1,5 @@
 <?php
-namespace Qrcode;
+namespace Liloo\Qrcode;
 
 use \Exception;
 use Qrcode\InputItem;

@@ -1,5 +1,5 @@
 <?php
-namespace Qrcode;
+namespace Liloo\Qrcode;
 
 use Qrcode\Input;
 use Qrcode\Spec;
