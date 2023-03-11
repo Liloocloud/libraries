@@ -29,6 +29,9 @@ Gestão de requisições
 * Liloo\Request\cURL
 * Liloo\Request\Request
 
+Gerador de QRcode
+* Liloo\Qrcode\*
+
 ## Requisitos
 * Versão mínima do PHP 7+
 * PHPMailer para envio de emails
