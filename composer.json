@@ -11,7 +11,8 @@
         "database",
         "generic",
         "email",
-        "api"
+        "api",
+        "Qrcode"
     ],
     "homepage": "https://github.com/Liloocloud/libraries",
     "authors": [
