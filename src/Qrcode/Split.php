@@ -1,9 +1,9 @@
 <?php
 namespace Liloo\Qrcode;
 
-use Qrcode\Input;
-use Qrcode\Spec;
 use \Exception;
+use Liloo\Qrcode\Input;
+use Liloo\Qrcode\Spec;
 
 class Split
 {

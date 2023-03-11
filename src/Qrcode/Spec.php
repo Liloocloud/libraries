@@ -1,7 +1,7 @@
 <?php
 namespace Liloo\Qrcode;
 
-use Qrcode\Str;
+use Liloo\Qrcode\Str;
 
 class Spec
 {

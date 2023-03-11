@@ -2,8 +2,8 @@
 namespace Liloo\Qrcode;
 
 use \Exception;
-use Qrcode\Input;
-use Qrcode\RsBlock;
+use Liloo\Qrcode\Input;
+use Liloo\Qrcode\RsBlock;
 
 class RawCode
 {

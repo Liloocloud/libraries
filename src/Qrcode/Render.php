@@ -2,13 +2,13 @@
 namespace Liloo\Qrcode;
 
 use \Exception;
-use Qrcode\Input;
-use Qrcode\Mask;
-use Qrcode\Spec;
-use Qrcode\Split;
-use Qrcode\Tools;
-use Qrcode\RawCode;
-use Qrcode\FrameFiller;
+use Liloo\Qrcode\Input;
+use Liloo\Qrcode\Mask;
+use Liloo\Qrcode\Spec;
+use Liloo\Qrcode\Split;
+use Liloo\Qrcode\Tools;
+use Liloo\Qrcode\RawCode;
+use Liloo\Qrcode\FrameFiller;
 
 class Render
 {

@@ -2,9 +2,9 @@
 namespace Liloo\Qrcode;
 
 use \Exception;
-use Qrcode\Image;
-use Qrcode\Tools;
-use Qrcode\Render;
+use Liloo\Qrcode\Image;
+use Liloo\Qrcode\Tools;
+use Liloo\Qrcode\Render;
 
 class Encode
 {

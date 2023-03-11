@@ -2,9 +2,9 @@
 namespace Liloo\Qrcode;
 
 use \Exception;
-use Qrcode\InputItem;
-use Qrcode\Spec;
-use Qrcode\BitStream;
+use Liloo\Qrcode\InputItem;
+use Liloo\Qrcode\Spec;
+use Liloo\Qrcode\BitStream;
 
 class Input
 {

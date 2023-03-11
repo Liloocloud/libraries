@@ -1,7 +1,7 @@
 <?php
 namespace Liloo\Qrcode;
 
-use Qrcode\RsItem;
+use Liloo\Qrcode\RsItem;
 
 class RsBlock
 {

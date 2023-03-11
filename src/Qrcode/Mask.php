@@ -1,7 +1,7 @@
 <?php
 namespace Liloo\Qrcode;
 
-use Qrcode\Spec;
+use Liloo\Qrcode\Spec;
 
 class Mask
 {
